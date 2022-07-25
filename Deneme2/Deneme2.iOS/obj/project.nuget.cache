@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "9IMLN2Ps98fgXhmorZCjni1303tt4VP98pM23uugZEb8jdlE8ElNmtBI+fVwYM9kaUu7A5jGz0MjYLnhjaKxmw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\DELL\\source\\repos\\Deneme2\\Deneme2\\Deneme2.iOS\\Deneme2.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\documentformat.openxml\\2.17.1\\documentformat.openxml.2.17.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

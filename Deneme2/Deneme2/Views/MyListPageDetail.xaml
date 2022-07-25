@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           
+             x:Class="Deneme2.Views.MyListPageDetail">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <Label Text="Detaylar" HorizontalOptions="Center" TextColor="Black" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Adı:" Padding="10" />
+                <Entry  Text="{Binding SelectedUser.Name}" HorizontalOptions="Center" WidthRequest="115" x:Name="MyItemNameShow" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Soyadı:" />
+                <Entry  Text="{Binding SelectedUser.Surname}" HorizontalOptions = "Center" WidthRequest="115" x:Name="MyItemSurnameShow" HorizontalTextAlignment="Start"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Label Text="Yaşı:" Padding="10"/>
+                <Entry Text="{Binding SelectedUser.Age}" HorizontalOptions="Center" WidthRequest="115" x:Name="MyItemAgeShow" HorizontalTextAlignment="Start"/>
+            </StackLayout>
+            <Button Clicked="Button1_Clicked" Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" x:Name="Button1" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
