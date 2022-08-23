@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "9IMLN2Ps98fgXhmorZCjni1303tt4VP98pM23uugZEb8jdlE8ElNmtBI+fVwYM9kaUu7A5jGz0MjYLnhjaKxmw==",
+  "dgSpecHash": "KphyIxUSf80pL3+3KvBbXkCdWXMI7p1o5twdUGV02JvkJjL96tYPN2yOPyrapujnPla9WowD+H92H1EfXjFh1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\Deneme2\\Deneme2\\Deneme2.iOS\\Deneme2.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\documentformat.openxml\\2.17.1\\documentformat.openxml.2.17.1.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",

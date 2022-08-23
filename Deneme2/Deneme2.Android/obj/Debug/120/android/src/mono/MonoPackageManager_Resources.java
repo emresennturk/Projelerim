@@ -4,7 +4,10 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "Deneme2.Android.dll" comes first in this list. */
 		"Deneme2.Android.dll",
 		"Deneme2.dll",
+		"DocumentFormat.OpenXml.dll",
 		"FormsViewGroup.dll",
+		"Newtonsoft.Json.dll",
+		"System.IO.Packaging.dll",
 		"Xamarin.AndroidX.Activity.dll",
 		"Xamarin.AndroidX.Annotation.dll",
 		"Xamarin.AndroidX.Annotation.Experimental.dll",

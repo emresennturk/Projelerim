@@ -1,60 +1,107 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Deneme2.Views.MylistPage">
-    
-    <ContentPage.Content>
-        <StackLayout Orientation="Vertical" >
-            <StackLayout Orientation="Horizontal">
-                <SearchBar Placeholder="ARA" HorizontalOptions="CenterAndExpand" WidthRequest="800" x:Name="SearchBarr" TextChanged="SearchBar_TextChanged"/>
-                <Button Text="Ekle" HorizontalOptions="EndAndExpand" WidthRequest="100" HeightRequest="40" Clicked="Button_Clicked_1" />
-            </StackLayout>
-            
-            <ListView ItemsSource="{Binding PersonList}"
-                      x:Name="MainListView"
-                  HasUnevenRows="True"
-                  SeparatorVisibility="None"
-                  ItemTapped="OnItemSelected">
+             x:Class="Deneme2.Views.MyListPage"
+             xmlns:viewModel ="clr-namespace:Deneme2.ViewModel"
+             x:Name="myListPageKey">
 
+    <ContentPage.BindingContext>
+        <viewModel:MyListPageViewModel></viewModel:MyListPageViewModel>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" BackgroundColor="LightGray" >
+            <Frame Padding="10,30,3,5"  HorizontalOptions="Center">
+
+                <StackLayout Orientation="Horizontal">
+
+                <SearchBar Placeholder="ARA" 
+                           HorizontalOptions="Center" 
+                           WidthRequest="800" 
+                           x:Name="SearchBarr"                  
+                           Text="{Binding SearchText}"
+                           SearchCommand="{Binding SearchCommand}"/>
+                <Frame BorderColor="Black" Padding="-1">
+                    <Button Text="Ekle" 
+                            BackgroundColor="White"
+                        HorizontalOptions="End" 
+                        WidthRequest="100" 
+                        HeightRequest="40" 
+                        CornerRadius="10"
+                        Command="{Binding AddUserCommand}"/>
+                </Frame>
+            </StackLayout>
+            </Frame>
+
+            <ListView ItemsSource="{Binding PersonList}"
+                      HasUnevenRows="True"
+                      x:Name="MainListView"
+                      BackgroundColor="LightCyan"
+                      SeparatorVisibility="None">
 
                 <ListView.ItemTemplate>
                     <DataTemplate>
+
                         <ViewCell>
-                            <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+                            <Frame BorderColor="Black" CornerRadius="15">
+
+                                <Grid Padding="10" 
+                                  RowSpacing="10" 
+                                  ColumnSpacing="10"
+                                  Margin="10">
 
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="*"/>
                                 </Grid.RowDefinitions>
+
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="Auto"/>
                                     <ColumnDefinition Width="*"/>
                                 </Grid.ColumnDefinitions>
 
+                                <Label x:Name="lblad"
+                                       Grid.Column="1"
+                                       Text="{Binding Name}"
+                                       VerticalOptions="End"/>
 
-                                <Label
-                                    x:Name="lblad"
-                                    Grid.Column="1"
-                                   Text="{Binding Name}"
-                                   VerticalOptions="End"/>
                                 <Label Grid.Column="1"
-                                   Grid.Row="1"
-                                   VerticalOptions="Start"
-                                   Text="{Binding Surname}"/>
+                                       Grid.Row="1"
+                                       VerticalOptions="Start"
+                                       Text="{Binding Surname}"/>
+
                                 <Label Grid.Column="1"
-                                   Text="{Binding Age}"
-                                   Grid.Row="2"
-                                   VerticalOptions="StartAndExpand"/>
+                                       Text="{Binding Age}"
+                                       Grid.Row="2"
+                                       VerticalOptions="StartAndExpand"/>
+                                    
+                                <Label Grid.Column="1"
+                                       Text="{Binding Homeland}"
+                                       Grid.Row="3"
+                                       Padding="2,0,0,0"
+                                       VerticalOptions="Center"/>
+                                    <Label Grid.Column="1"
+                                       Text="{Binding School}"
+                                       Grid.Row="4"
+                                       Padding="2,0,0,0"
+                                       VerticalOptions="Center"/>
 
-
+                                <Grid.GestureRecognizers>
+                                        <TapGestureRecognizer Command="{Binding Path=BindingContext.ItemTappedCommand,Source={x:Reference myListPageKey}}" CommandParameter="{Binding .}">
+                                        </TapGestureRecognizer>
+                                </Grid.GestureRecognizers>
                             </Grid>
+                            </Frame>
+
                         </ViewCell>
+
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
 
-        
+
     </ContentPage.Content>
-    
+
 </ContentPage>

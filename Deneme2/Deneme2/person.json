@@ -1,0 +1,33 @@
+[
+  {
+    "Name": "Emre",
+    "Surname": "Şentürk",
+    "Homeland": "Ordu",
+    "School": "Bilgisayar Mühendisliği"
+  },
+  {
+    "Name": "Burak",
+    "Surname": "Kayacı",
+    "Homeland": "Rize",
+    "School": "Uluslar Arası Ticaret"
+  },
+  {
+    "Name": "Tolga",
+    "Surname": "Yılmaz",
+    "Homeland": "Rize",
+    "School": "Gastronomi"
+  },
+  {
+    "Name": "Enes",
+    "Surname": "Dicel",
+    "Homeland": "Giresun",
+    "School": "Anestezi"
+  },
+  {
+    "Name": "Batuhan",
+    "Surname": "Aktaş",
+    "Homeland": "Konya",
+    "School": "Matematik"
+  }
+  
+]

@@ -1,24 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-           
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodel="clr-namespace:Deneme2.ViewModel" 
              x:Class="Deneme2.Views.MyListPageDetail">
     <ContentPage.Content>
-        <StackLayout Orientation="Vertical">
-            <Label Text="Detaylar" HorizontalOptions="Center" TextColor="Black" />
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <StackLayout Orientation="Vertical" BackgroundColor="LightGray">
+            <Label Text="Detaylar" HorizontalOptions="Center" TextColor="Black"  />
+            <StackLayout Orientation="Horizontal" Padding="0,0,53,0" HorizontalOptions="Center">
                 <Label Text="Adı:" Padding="10" />
-                <Entry  Text="{Binding SelectedUser.Name}" HorizontalOptions="Center" WidthRequest="115" x:Name="MyItemNameShow" HorizontalTextAlignment="Start" />
+                <Entry  Text="{Binding SelectedUser.Name}"
+                        HorizontalOptions="Center"
+                        WidthRequest="115"
+                        x:Name="MyItemNameShow" 
+                        HorizontalTextAlignment="Start" />
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
-                <Label Text="Soyadı:" />
-                <Entry  Text="{Binding SelectedUser.Surname}" HorizontalOptions = "Center" WidthRequest="115" x:Name="MyItemSurnameShow" HorizontalTextAlignment="Start"/>
+            
+            <StackLayout Orientation="Horizontal" Padding="0,0,53,0" HorizontalOptions="Center" >
+                <Label Text="Soyadı:" Padding="0,7,0,1"/>
+                <Entry  Text="{Binding SelectedUser.Surname}" 
+                        HorizontalOptions = "Center" 
+                        WidthRequest="115" 
+                        HeightRequest="38"
+                        x:Name="MyItemSurnameShow"
+                        HorizontalTextAlignment="Start"/>
             </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <StackLayout Orientation="Horizontal" Padding="0,0,53,0" HorizontalOptions="Center" >
                 <Label Text="Yaşı:" Padding="10"/>
-                <Entry Text="{Binding SelectedUser.Age}" HorizontalOptions="Center" WidthRequest="115" x:Name="MyItemAgeShow" HorizontalTextAlignment="Start"/>
+                <Entry Text="{Binding SelectedUser.Age}" 
+                       HorizontalOptions="Center"
+                       WidthRequest="115"
+                       x:Name="MyItemAgeShow" 
+                       HorizontalTextAlignment="Start"/>
             </StackLayout>
-            <Button Clicked="Button1_Clicked" Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="Center" x:Name="Button1" />
+            
+            <StackLayout Orientation="Horizontal" Padding="0,0,91,0" HorizontalOptions="CenterAndExpand" >
+                <Label Text="Memleket:" Padding="10"
+                       HorizontalOptions="Center"/>
+                <Entry Text="{Binding SelectedUser.Homeland}" 
+                       HorizontalOptions="Start" 
+                       WidthRequest="115"
+                       x:Name="MyItemHomelandShow" 
+                       HorizontalTextAlignment="Start"
+                       />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Padding="0,0,132,0" HorizontalOptions="CenterAndExpand" >
+                <Label Text="Okuduğu Bölüm:" Padding="10"
+                       HorizontalOptions="Center"/>
+                <Entry Text="{Binding SelectedUser.School}" 
+                       HorizontalOptions="Start" 
+                       WidthRequest="170"
+                       x:Name="MyItemSchoolShow" 
+                       HorizontalTextAlignment="Start"
+                       />
+            </StackLayout>
+            <Button  
+                    Padding="20,20,20,20" 
+                    Command="{Binding SelectCommand}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center"
+                    BackgroundColor="White"
+                    CornerRadius="15"
+                    Text="{Binding ButtonText}"
+                    />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

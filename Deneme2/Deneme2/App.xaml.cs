@@ -11,7 +11,7 @@ namespace Deneme2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage (new MylistPage());
+            MainPage = new NavigationPage (new MyListPage(ViewModel.TransactionMode.Insert));
         }
 
         protected override void OnStart()

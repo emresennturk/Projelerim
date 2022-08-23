@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "YJY9slx4yMjVh44OYzlepbc944yCjpFd8gaqkUqXu4PgpR4BaArnPPec/740ytSgCHgcrcg25m5ZxvMEN5PbAQ==",
+  "dgSpecHash": "qgzMnu2kLNK40P7risIR7zdRKe3k0baLK4bnlfLGMYFXY/H/DZ9H0+l6iCpnSoVRtLqg/7QxhcSkbZ9tIjUcTQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\DELL\\source\\repos\\Deneme2\\Deneme2\\Deneme2\\Deneme2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DELL\\.nuget\\packages\\documentformat.openxml\\2.17.1\\documentformat.openxml.2.17.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\DELL\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.io.packaging\\4.7.0\\system.io.packaging.4.7.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\DELL\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",

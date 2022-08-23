@@ -8,13 +8,16 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Deneme2.Views.MylistPage.xaml", "Views/MylistPage.xaml", typeof(global::Deneme2.Views.MylistPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("Deneme2.Views.MyListPage.xaml", "Views/MyListPage.xaml", typeof(global::Deneme2.Views.MyListPage))]
 
 namespace Deneme2.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MylistPage.xaml")]
-    public partial class MylistPage : global::Xamarin.Forms.ContentPage {
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MyListPage.xaml")]
+    public partial class MyListPage : global::Xamarin.Forms.ContentPage {
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.ContentPage myListPageKey;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.SearchBar SearchBarr;
@@ -24,7 +27,8 @@ namespace Deneme2.Views {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MylistPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MyListPage));
+            myListPageKey = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ContentPage>(this, "myListPageKey");
             SearchBarr = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.SearchBar>(this, "SearchBarr");
             MainListView = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.ListView>(this, "MainListView");
         }
